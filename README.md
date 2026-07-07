@@ -183,7 +183,7 @@ docs/      getting-started · architecture · workflow  +  backlog/ (exercises)
 Both teammates: add your name and GitHub handle here (and set
 `git config user.email` to your GitHub email so your commits count).
 
-- Name — @handle
+- Name — Sfichi Adrian
 - Name — @handle
 
 ## Your DevOps tasks (this is the week) — TODO
