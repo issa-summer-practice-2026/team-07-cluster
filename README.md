@@ -1,5 +1,5 @@
-PERIANU GEORGE-BOGDAN
-SFICHI ADRIAN-JULIAN
+# PERIANU GEORGE-BOGDAN
+# SFICHI ADRIAN-JULIAN
 # instrument-cluster
 
 A digital automotive **instrument cluster** — the starter app for the ISSA
