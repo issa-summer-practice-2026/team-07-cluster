@@ -5,7 +5,7 @@ Host/port come from the environment (``HOST`` / ``PORT``). The default host is
 ``HOST=0.0.0.0`` so the service is reachable from outside the container.
 """
 
-
+import os
 
 from app import create_app
 
