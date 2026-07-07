@@ -34,9 +34,9 @@ jobs:
 
             - name: boot the app
               run: |
-               python app.py &
+               python -m app &
                sleep 5
-               curl --fail http://localhost:8000/health 
+               curl --fail http://127.0.0.1:8000/health
               
     frontend: 
         runs-on: ubuntu-latest
