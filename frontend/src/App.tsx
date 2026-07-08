@@ -29,7 +29,7 @@ const INITIAL_STATE: ClusterState = {
   },
 };
 
-function useVersion(: string {
+function useVersion(): string {
   const [version, setVersion] = useState("…");
   useEffect(() => {
     let active = true;
