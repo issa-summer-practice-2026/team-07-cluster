@@ -22,7 +22,7 @@ jobs:
               run: ruff check .
 
             - name: pytest
-              run:  pytest --cov
+              run:  pytest --cov --cov-fail-under=80
               
             - name: Upload coverage 
               uses: actions/upload-artifact@v4
