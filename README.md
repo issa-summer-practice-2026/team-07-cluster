@@ -1,3 +1,4 @@
+[![CI Pipeline](https://github.com/issa-summer-practice-2026/team-07-cluster/actions/workflows/ci.yml/badge.svg)](https://github.com/issa-summer-practice-2026/team-07-cluster/actions/workflows/ci.yml)
 # PERIANU GEORGE-BOGDAN
 # SFICHI ADRIAN-JULIAN
 # instrument-cluster
