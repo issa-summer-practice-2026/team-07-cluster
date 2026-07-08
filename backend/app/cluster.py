@@ -37,6 +37,7 @@ TELLTALE_KEYS = (
     "battery",
     "coolant",
     "low_fuel",
+    "seatbelt",
     "bulb_out",
     "oil",
 )
@@ -61,6 +62,7 @@ class RawInput:
     high_beam: bool = False
     check_engine: bool = False
     battery: bool = False
+    seatbelt: bool = False
     bulb_out: bool = False  # lights the bulb-failure telltale; also the hyper-flash packet's seam
     oil: bool = False  # lights the oil-pressure telltale
     odometer_km: float = 12000.0
@@ -138,6 +140,7 @@ def compute_telltales(inp: RawInput) -> dict[str, bool]:
         "oil": inp.oil,
         "coolant": inp.coolant_temp_c >= OVERHEAT_TEMP_C,
         "low_fuel": inp.fuel_pct <= LOW_FUEL_PCT,
+        "seatbelt": inp.seatbelt,
         "bulb_out": inp.bulb_out,
     }
 

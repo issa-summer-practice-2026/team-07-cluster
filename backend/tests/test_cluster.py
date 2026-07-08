@@ -22,9 +22,6 @@ def test_clamp():
     assert clamp(-1, 0, 10) == 0
     assert clamp(11, 0, 10) == 10
 
-def test_oil_lit_from_toggle():
-        assert compute_telltales(RawInput(oil=True))["oil"] is True
-
 
 class TestGaugeFraction:
     def test_zero_at_min(self):
@@ -77,6 +74,9 @@ class TestRedline:
 
 
 class TestTelltales:
+    def test_oil_lit_from_toggle(self):
+        assert compute_telltales(RawInput(oil=True))["oil"] is True
+
     def test_low_fuel_at_threshold(self):
         assert compute_telltales(RawInput(fuel_pct=LOW_FUEL_PCT))["low_fuel"] is True
 
@@ -88,6 +88,9 @@ class TestTelltales:
 
     def test_overheat_below_threshold(self):
         assert compute_telltales(RawInput(coolant_temp_c=OVERHEAT_TEMP_C - 1))["coolant"] is False
+
+    def test_seatbelt_lit_from_toggle(self):
+        assert compute_telltales(RawInput(seatbelt=True))["seatbelt"] is True
 
     def test_hazard_forces_both_indicators(self):
         t = compute_telltales(RawInput(hazard=True))
