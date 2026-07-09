@@ -116,6 +116,8 @@ class TestTelltales:
 
     def test_default_is_all_off(self):
         t = compute_telltales(RawInput())
+        assert t["seatbelt"] is True
+        del t["seatbelt"]
         assert not any(t.values())
 
 
