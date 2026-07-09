@@ -22,6 +22,12 @@ def test_clamp():
     assert clamp(-1, 0, 10) == 0
     assert clamp(11, 0, 10) == 10
 
+def test_shift_light_at_threshold():
+    assert compute_telltales(RawInput(rpm=6000))["shift_light"] is True
+
+def test_shift_light_below_threshold():
+    assert compute_telltales(RawInput(rpm=5999))["shift_light"] is False
+
 
 class TestGaugeFraction:
     def test_zero_at_min(self):

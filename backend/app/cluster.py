@@ -26,6 +26,7 @@ FUEL_MAX_PCT = 100.0  # fuel is expressed 0..100 %
 LOW_FUEL_PCT = 15.0  # low-fuel telltale lights at/under this
 OVERHEAT_TEMP_C = 115.0  # coolant/overheat telltale lights at/over this
 VALID_GEARS = ("P", "R", "N", "D", "1", "2", "3", "4", "5", "6")
+SHIFT_LIGHT_RPM = 6000.0
 
 # Stable telltale keys exposed in /api/state (packets add new ones, never remove).
 TELLTALE_KEYS = (
@@ -40,6 +41,7 @@ TELLTALE_KEYS = (
     "seatbelt",
     "bulb_out",
     "oil",
+    "shift_light",
 )
 
 
@@ -142,6 +144,7 @@ def compute_telltales(inp: RawInput) -> dict[str, bool]:
         "low_fuel": inp.fuel_pct <= LOW_FUEL_PCT,
         "seatbelt": inp.seatbelt,
         "bulb_out": inp.bulb_out,
+        "shift_light": inp.rpm >= SHIFT_LIGHT_RPM,
     }
 
 
