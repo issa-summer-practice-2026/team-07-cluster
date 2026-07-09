@@ -16,6 +16,7 @@ const INITIAL_STATE: ClusterState = {
   temp: { value_c: 90, fraction: (90 - 40) / (130 - 40) },
   gear: "P",
   odometer_km: 12000,
+  hyperflash: false,
   telltales: {
     left: false,
     right: false,

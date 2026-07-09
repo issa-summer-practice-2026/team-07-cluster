@@ -66,7 +66,8 @@ export function Cluster({ state }: { state: ClusterState }) {
 
   return (
     <div className="cluster">
-      <TelltaleRow telltales={state.telltales} />
+      <TelltaleRow telltales={state.telltales}
+      hyperflash={state.hyperflash} />
 
       <div className="cluster-main">
         <div className="dial dial--left">

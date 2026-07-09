@@ -111,10 +111,10 @@ const LAMPS: LampConfig[] = [
   { name: "right", tone: "signal", turn: true },
 ];
 
-export function TelltaleRow({ telltales }: { telltales: Telltales }) {
+export function TelltaleRow({ telltales, hyperflash }: { telltales: Telltales, hyperflash: boolean }) {
   // Hazard lights both indicators (via the backend), so this covers hazard too.
   const anyTurn = telltales.left || telltales.right;
-  const blinkOn = useBlink(anyTurn);
+  const blinkOn = useBlink(anyTurn, hyperflash ? 200 : 440);
   return (
     <div className="telltales">
       {LAMPS.map(({ name, tone, turn }) => {

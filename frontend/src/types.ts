@@ -27,6 +27,7 @@ export interface ClusterState {
   gear: string;
   odometer_km: number;
   telltales: Telltales;
+  hyperflash: boolean;
 }
 
 export type SignalAction = "left" | "right" | "hazard" | "off";
