@@ -81,6 +81,11 @@ const ICONS: Partial<Record<TelltaleName, ReactNode>> = {
       <path d="M12 3.1V1.6 M4.7 6 3.5 4.8 M19.3 6 20.5 4.8" />
     </g>
   ),
+  shift_light: (
+    <g fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">
+      <polygon points="12,3 4,11 9,11 15,21 15,11 20,11" />
+    </g>
+  ),
 };
 
 type Tone = "signal" | "beam" | "warn" | "danger";
