@@ -105,8 +105,9 @@ const LAMPS: LampConfig[] = [
   { name: "battery", tone: "danger" },
   { name: "coolant", tone: "danger" },
   { name: "low_fuel", tone: "warn" },
-  { name: "seatbelt", tone: "danger" },
+  //{ name: "seatbelt", tone: "danger" },
   { name: "bulb_out", tone: "warn" },
+  { name: "shift_light", tone: "danger" },
   { name: "right", tone: "signal", turn: true },
 ];
 
