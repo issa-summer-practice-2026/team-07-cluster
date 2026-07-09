@@ -20,7 +20,8 @@ def test_state_shape(client):
     resp = client.get("/api/state")
     assert resp.status_code == 200
     data = resp.get_json()
-    assert set(data) == {"speed", "rpm", "fuel", "temp", "gear", "odometer_km", "telltales", "hyperflash"}
+    assert set(data) == {"speed", "rpm", "fuel", "temp", "gear",
+    "odometer_km", "telltales", "hyperflash"}
     assert set(data["telltales"]) == set(TELLTALE_KEYS)
 
 
