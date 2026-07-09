@@ -26,6 +26,9 @@ const INITIAL_STATE: ClusterState = {
     coolant: false,
     low_fuel: false,
     bulb_out: false,
+    oil: false,
+    seatbelt: true,
+    shift_light: false,
   },
 };
 

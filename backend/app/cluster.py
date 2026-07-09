@@ -64,7 +64,7 @@ class RawInput:
     high_beam: bool = False
     check_engine: bool = False
     battery: bool = False
-    seatbelt: bool = False
+    seatbelt: bool = True
     bulb_out: bool = False  # lights the bulb-failure telltale; also the hyper-flash packet's seam
     oil: bool = False  # lights the oil-pressure telltale
     odometer_km: float = 12000.0
