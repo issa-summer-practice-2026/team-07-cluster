@@ -28,6 +28,11 @@ def test_shift_light_at_threshold():
 def test_shift_light_below_threshold():
     assert compute_telltales(RawInput(rpm=5999))["shift_light"] is False
 
+def test_speed_in_mph():
+        state = derive_state(RawInput(speed_kmh=100, use_mph=True))
+        assert state.speed_unit == "mph"
+        assert state.speed_value == pytest.approx(62.1371)
+
 
 class TestGaugeFraction:
     def test_zero_at_min(self):

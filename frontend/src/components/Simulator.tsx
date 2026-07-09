@@ -19,6 +19,7 @@ const LAMP_TOGGLES: { name: TelltaleName; label: string }[] = [
   // uncomment the matching line to get a clickable toggle here too.
   { name: "oil", label: "Oil" },
   { name: "seatbelt", label: "Seat belt" },
+  { name: "use_mph", label: "Use mph" },
 ];
 
 function send(partial: Record<string, unknown>) {
