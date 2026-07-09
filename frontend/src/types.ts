@@ -14,6 +14,7 @@ export interface Telltales {
   seatbelt?: boolean; // lamp ships in the UI but backend omits it — students add it (docs/backlog/02-seatbelt-telltale)
   bulb_out: boolean;
   shift_light?: boolean; // lamp ships in the UI but backend omits it — students add it (docs/backlog/03-shift-light-telltale)
+  use_mph?: boolean; // lamp ships in the UI but backend omits it — students add it (docs/backlog/04-use-mph-telltale)
 }
 
 export type TelltaleName = keyof Telltales;
