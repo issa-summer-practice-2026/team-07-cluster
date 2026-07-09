@@ -8,12 +8,12 @@ export interface Telltales {
   high_beam: boolean;
   check_engine: boolean;
   battery: boolean;
-  oil?: boolean; // lamp ships in the UI but backend omits it — students add it (docs/backlog/01-oil-telltale)
+  oil: boolean; // lamp ships in the UI but backend omits it — students add it (docs/backlog/01-oil-telltale)
   coolant: boolean;
   low_fuel: boolean;
-  seatbelt?: boolean; // lamp ships in the UI but backend omits it — students add it (docs/backlog/02-seatbelt-telltale)
+  seatbelt: boolean; // lamp ships in the UI but backend omits it — students add it (docs/backlog/02-seatbelt-telltale)
   bulb_out: boolean;
-  shift_light?: boolean; // lamp ships in the UI but backend omits it — students add it (docs/backlog/03-shift-light-telltale)
+  shift_light: boolean; // lamp ships in the UI but backend omits it — students add it (docs/backlog/03-shift-light-telltale)
 }
 
 export type TelltaleName = keyof Telltales;
