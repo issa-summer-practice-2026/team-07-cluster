@@ -2,7 +2,7 @@
 # PERIANU GEORGE-BOGDAN
 # SFICHI ADRIAN-JULIAN
 # instrument-cluster
-m
+#[![GitHub Release](https://img.shields.io/github/v/release/issa-summer-practice-2026/team-07-cluster?style=flat-square)](https://github.com/issa-summer-practice-2026/team-07-cluster/releases)
 A digital automotive **instrument cluster** — the starter app for the ISSA
 Summer Practice DevOps week. It ships **fully working and green**. Your job for
 the week is to build the **DevOps around it** (CI, PR/review flow, containers,
