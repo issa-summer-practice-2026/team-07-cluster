@@ -12,6 +12,9 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY backend/ ./backend
 COPY --from=frontend-builder /app/frontend/dist ./frontend/dist
 
+ARG APP_VERSION="unknown"
+ENV APP_VERSION=${APP_VERSION}
+
 ENV HOST=0.0.0.0
 EXPOSE 8000
 WORKDIR /app/backend
